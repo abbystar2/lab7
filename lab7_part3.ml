@@ -169,6 +169,7 @@ list", even though that's the type you used in your implementation.
 module type INT_STACK =
   sig
     (* ... your specification of the signature goes here ... *)
+    exception EmptyStack
     type stack
     val empty : stack
     val push : int -> stack -> stack 
