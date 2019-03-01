@@ -23,16 +23,19 @@ let to_color (r : int) (g : int) (b : int) : color =
   (r, g, b);;
 
 (* red c -- Returns the red channel value for the color c *)
-let red (r, g, b : color) : int = 
-  r ;;
+let red (c : color) : int = 
+  match c with
+  | (r, _g, _b) -> r ;;
 
 (* green c -- Returns the green channel value for the color c *)
-let green (r, g, b  : color) : int = 
-  g ;;
+let green (c : color) : int = 
+  match c with
+  | (_r, g, _b) -> g ;;
 
 (* blue c -- Returns the blue channel value for the color c *)
-let blue (r, g, b : color) : int = 
-  b ;;
+let blue (c : color) : int = 
+  match c with
+  | (_r, _g, b) -> b ;;
 
 (* color_named name -- Returns the color (as RGB representation)
    corresponding to the color name *)
