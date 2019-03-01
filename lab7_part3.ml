@@ -68,12 +68,12 @@ module IntListStack =
 
     (* top s -- Returns the value of the topmost element on stack s *)
     let top (s : stack) : int = match s with
-                                | [] -> raise EmptyStack
+                                | [] -> empty
                                 | hd :: _tl -> hd
 
     (* pop s -- Returns a stack with the topmost element from s removed *)
     let pop (s : stack) : stack =  match s with
-                                | [] -> raise EmptyStack
+                                | [] -> empty
                                 | _hd :: tl -> tl
   end ;;
 
