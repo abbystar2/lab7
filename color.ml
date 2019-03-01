@@ -23,15 +23,15 @@ let to_color (r : int) (g : int) (b : int) : color =
   (r, g, b);;
 
 (* red c -- Returns the red channel value for the color c *)
-let red ((r, g, b) : color) : int =
+let red (r, g, b : color) : int = 
   r ;;
 
 (* green c -- Returns the green channel value for the color c *)
-let green ((r, g, b) : color) : int = 
+let green (r, g, b  : color) : int = 
   g ;;
 
 (* blue c -- Returns the blue channel value for the color c *)
-let blue ((r, g, b)  : color) : int = 
+let blue (r, g, b : color) : int = 
   b ;;
 
 (* color_named name -- Returns the color (as RGB representation)

@@ -70,7 +70,6 @@ below.
 Exercise 2A: Extract the red channel of the color named Red, naming
 the result "red_channel".
 ......................................................................*)
-open Color ;;
 
 let red_channel : int = 
   Color.red (Color.color_named Color.Red) ;;
