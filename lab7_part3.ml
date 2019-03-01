@@ -68,12 +68,12 @@ module IntListStack =
 
     (* top s -- Returns the value of the topmost element on stack s *)
     let top (s : stack) : int = match s with
-                                | [] -> empty
+                                | [] -> raise EmptyStack
                                 | hd :: _tl -> hd
 
     (* pop s -- Returns a stack with the topmost element from s removed *)
     let pop (s : stack) : stack =  match s with
-                                | [] -> empty
+                                | [] -> raise EmptyStack
                                 | _hd :: tl -> tl
   end ;;
 
@@ -169,7 +169,6 @@ list", even though that's the type you used in your implementation.
 module type INT_STACK =
   sig
     (* ... your specification of the signature goes here ... *)
-    exception EmptyStack
     type stack
     val empty : stack
     val push : int -> stack -> stack 
