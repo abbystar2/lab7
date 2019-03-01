@@ -6,6 +6,6 @@ module type COLOR =
 		val red : color -> int
 		val green : color -> int
 		val blue : color -> int
-		val color_name : color_name -> color
+		val color_named : color_name -> color
 	end
 ;;
