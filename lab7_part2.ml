@@ -73,7 +73,7 @@ the result "red_channel".
 open Color ;;
 
 let red_channel : int = 
-  Color.red (color_named Red) ;;
+  red (color_named Red) ;;
 
 (* We hope you'll find the module system quite useful, once you get
 the hang of the conventions.

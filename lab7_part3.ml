@@ -54,10 +54,10 @@ the topmost element removed.
 ........................................................................
 Exercise 3A: Complete this implementation of an integer stack module.
 ......................................................................*)
+exception EmptyStack ;;
 
 module IntListStack =
   struct
-    exception EmptyStack
     type stack = int list
 
     (* empty -- An empty stack *)
